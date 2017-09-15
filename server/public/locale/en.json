@@ -1,0 +1,163 @@
+{
+    "common": {
+        "page": {
+            "index": "HOME",
+            "event": "EVENT",
+            "purchase": "PURCHASE TICKET",
+            "ticket": "CHECK TICKET",
+            "entering": "ENTERING"
+        },
+        "content": {
+            "select": "Select..",
+            "demo-explain": "This is a demonstration page of a resale deterrent ticket.\n\nBy the operation on the screen, you can check the flow from sale of tickets to entry on the blockchain.",
+            "on-sale": "On-Sale",
+            "off-sale": "Off-Sale"
+        },
+        "caption": {
+            "attraction": {
+                "title": "Event",
+                "key": "Event Key",
+                "name": "Event Name",
+                "time": "Opening Time",
+                "sales-status": "Sales Status"
+            },
+            "ticket": {
+              "key" : "Ticket Key",
+              "seat-count" : "Seat Count"
+            },
+            "purchaser": "Purchaser",
+            "entering-user": "Visitor",
+            "qr-content": "QR Content"
+        },
+        "dialog": {
+            "err-no-promoter": {
+                "title": "Promoter account not registered",
+                "msg": "Accounts for demonstration has not been registered.\nCreate accounts for demonstration and record on the block chain and local storage.\n\n* Event Promoter\n* Ticket Sales Agent\n\nThis process takes a long time."
+            },
+            "err-no-event": {
+                "title": "Event not registered",
+                "msg": "Event for demo is not registered.\nPlease register events beforehand."
+            },
+            "err-no-user": {
+                "title": "No account registered",
+                "msg": "Purchasers for demo are not registered.\nCreate an account for demonstration and record it on local storage."
+            },
+            "err-required": {
+                "title": "Input error",
+                "msg": "There are unedited items."
+            }
+        }
+    },
+    "index": {
+        "title": "MENU"
+    },
+    "event": {
+        "content": {
+        },
+        "form": {
+            "create-event": {
+                "description": "Create a new event",
+                "submit": "New event registration"
+            },
+            "sales-status": {
+                "submit": "Switch"
+            }
+        },
+        "dialog": {
+        }
+    },
+    "purchase": {
+        "content": {
+        },
+        "form": {
+            "purchase": {
+                "description": "Purchase tickets",
+                "submit": "Purchase execution"
+            },
+            "qr": {
+                "description": "Granting entry to mobile terminals",
+                "description-option": "In actual service, in order to prevent resale of the above QR code itself, the time to which you can give the entrance right after being displayed should be limited to a short time such as 30 minutes.\n\nAs another method, you can confirm the address of the key in the terminal in advance before purchasing and give the entrance right to the block chain on the service side after the purchase is completed.",
+                "submit": "Pseudo read"
+            }
+        },
+        "dialog": {
+            "complete": {
+                "title": "Register Complete",
+                "msg": "Grant entry right to the address."
+            },
+            "err-onetime-unmatch": {
+                "title": "Invalid onetime key",
+                "msg": "Onetime key not matched."
+            },
+            "err-onetime-used": {
+                "title": "Already registered",
+                "msg": "It is already registered."
+            }
+        }
+    },
+    "ticket": {
+        "content": {
+        },
+        "form": {
+            "change-seat-count": {
+                "submit": "Change"
+            },
+            "cancel-ticket": {
+                "submit": "Cancel"
+            }
+        },
+        "dialog": {
+            "err-no-ticket": {
+                "title": "No Ticket",
+                "msg": "This user has no ticket for this event."
+            },
+            "err-no-account": {
+                "title": "No account registered",
+                "msg": "Purchasers for demo are not registered.\nCreate an account for demonstration and record it on local storage."
+            }
+        }
+    },
+    "entering": {
+        "content": {
+        },
+        "form": {
+            "prepare-enter": {
+                "submit": "Start Entry"
+            },
+            "enter": {
+                "submit": "Enter"
+            },
+            "user": {
+                "description": "Display QR code for admission",
+                "submit": "Display QR code"
+            },
+            "qr": {
+                "description": "Entering",
+                "drawing-time": "Drawing Time",
+                "submit": "Pseudo read and enter"
+            }
+        },
+        "dialog": {
+            "entried": {
+                "title": "Entring is complete",
+                "msg": "%0 people(s) entered."
+            },
+            "warning-on-sale": {
+                "title": "Tickets on sale",
+                "msg": "It is a ticket currently on sale.\n\nIs there a possibility that the entrance right will be changed even after the entrance preparation is completed?"
+            },
+            "err-no-auth": {
+                "title": "Account error",
+                "msg": "There is no entering right."
+            },
+            "err-timeout": {
+                "title": "Invalid QR indication",
+                "msg": "Display time (signature time) is more than 10 minutes off. Please execute redisplay."
+            },
+            "err-used": {
+                "title": "Already Entered",
+                "msg": "This account has already been entered."
+            }
+        }
+    }
+}

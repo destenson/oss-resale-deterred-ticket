@@ -1,0 +1,167 @@
+{
+    "common": {
+        "page": {
+            "index": "ホーム",
+            "event": "イベント管理",
+            "purchase": "チケット購入",
+            "ticket": "チケット確認",
+            "entering": "入場"
+        },
+        "content": {
+            "select": "選択..",
+            "demo-explain": "転売抑止チケットのデモページです。\n\n画面上の操作で、ブロックチェーン上で動作するチケット販売から入場までのフローを確認できます。",
+            "on-sale": "販売中",
+            "off-sale": "販売終了"
+        },
+        "caption": {
+            "attraction": {
+                "title": "イベント",
+                "key": "イベントキー",
+                "name": "イベント名",
+                "time": "開催日時",
+                "sales-status": "販売状態"
+            },
+            "ticket": {
+              "key" : "チケットキー",
+              "seat-count" : "シート数"
+            },
+            "purchaser": "購入者",
+            "entering-user": "入場者",
+            "qr-content": "QR内容"
+        },
+        "dialog": {
+            "err-no-promoter": {
+                "title": "プロモーターアカウント未登録",
+                "msg": "デモ用のアカウントが登録されていません。\nデモ用にアカウントを作成し、ブロックチェーン上とローカルストレージに記録します。\n\n・イベント主催者\n・チケット販売代理店\n\nこの処理には多少時間がかかります。"
+            },
+            "err-no-event": {
+                "title": "イベント未登録",
+                "msg": "デモ用のイベントが登録されていません。\n事前にイベントの登録を行ってください。"
+            },
+            "err-no-user": {
+                "title": "アカウント未登録",
+                "msg": "デモ用の購入者が登録されていません。\nデモ用にアカウントを作成し、ローカルストレージに記録します。"
+            },
+            "err-required": {
+                "title": "入力エラー",
+                "msg": "未入力項目があります。"
+            }
+        }
+    },
+    "index": {
+        "title": "メニュ"
+    },
+    "event": {
+        "content": {
+        },
+        "form": {
+            "create-event": {
+                "description": "新規イベント作成",
+                "submit": "イベント新規登録"
+            },
+            "sales-status": {
+                "submit": "切替"
+            }
+        },
+        "dialog": {
+        }
+    },
+    "purchase": {
+        "content": {
+        },
+        "form": {
+            "purchase": {
+                "description": "チケット購入",
+                "submit": "購入実行"
+            },
+            "qr": {
+                "description": "携帯端末への入場権付与",
+                "description-option": "実際のサービスにおいては、上記QRコード自体の転売を防ぐため、表示されてから入場権を付与できる時間は、30分など短い時間に制限するべきです。\n\n別の方法として、購入前に事前に端末内の鍵のアドレスを確認しておき、購入完了後にサービス側でブロックチェーンに入場権を付与する方法もあります。",
+                "submit": "疑似読取"
+            }
+        },
+        "dialog": {
+            "complete": {
+                "title": "登録完了",
+                "msg": "アドレスに入場権を付与しました。"
+            },
+            "err-onetime-unmatch": {
+                "title": "ワンタイムキー不一致",
+                "msg": "ワンタイムキーが一致しません。"
+            },
+            "err-onetime-used": {
+                "title": "登録済み",
+                "msg": "既に登録されています。"
+            }
+        }
+    },
+    "ticket": {
+        "content": {
+        },
+        "form": {
+            "change-seat-count": {
+                "submit": "変更"
+            },
+            "cancel-ticket": {
+                "submit": "キャンセル"
+            }
+        },
+        "dialog": {
+            "err-no-ticket": {
+                "title": "チケット無し",
+                "msg": "このユーザは、このイベントのチケットを保有していません。"
+            },
+            "err-no-account": {
+                "title": "アカウント未登録",
+                "msg": "デモ用の購入者が登録されていません。\nデモ用にアカウントを作成し、ローカルストレージに記録します。"
+            },
+            "err-no-account": {
+                "title": "アカウント未登録",
+                "msg": "デモ用の購入者が登録されていません。\nデモ用にアカウントを作成し、ローカルストレージに記録します。"
+            }
+        }
+    },
+    "entering": {
+        "content": {
+        },
+        "form": {
+            "prepare-enter": {
+                "submit": "入場開始"
+            },
+            "enter": {
+                "submit": "入場"
+            },
+            "user": {
+                "description": "入場用QRコード表示",
+                "submit": "QRコード表示"
+            },
+            "qr": {
+                "description": "入場",
+                "drawing-time": "描画日時",
+                "submit": "疑似読取入場"
+            }
+        },
+        "dialog": {
+            "entried": {
+                "title": "入場完了",
+                "msg": "%0 名の入場処理をしました。"
+            },
+            "warning-on-sale": {
+                "title": "販売中チケット",
+                "msg": "現在販売中のチケットです。\n\n入場準備完了後も入場権が変更する可能性がありますがよろしいですか？"
+            },
+            "err-no-auth": {
+                "title": "アカウントエラー",
+                "msg": "入場する権利がありません。"
+            },
+            "err-timeout": {
+                "title": "QR表示不正",
+                "msg": "表示時刻（署名時刻）が10分以上ずれています。再表示を実行してください。"
+            },
+            "err-used": {
+                "title": "入場済み",
+                "msg": "既にこのアカウントは入場済みです。"
+            }
+        }
+    }
+}
