@@ -57,7 +57,7 @@ DEMO_UTIL.confirmDialog = function (title, comment, ok, ng) {
 };
 
 DEMO_UTIL.createRandomId = function (len) {
-    var c = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    var c = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
     let id = '';
     for (let i = 0; i < len; i++) {
         id += c[Math.floor(Math.random() * c.length)];
