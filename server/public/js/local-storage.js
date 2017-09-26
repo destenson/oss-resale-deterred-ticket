@@ -1,6 +1,6 @@
 var LOCAL_STORAGE = {};
 
-var _prefix = 'inhibit-resale-token.v0.';
+var _prefix = 'inhibit-resale-token.v1.';
 
 var _promoterKey = _prefix + 'promoter';
 var _promoterIDKey = _prefix + 'promoter-id';
