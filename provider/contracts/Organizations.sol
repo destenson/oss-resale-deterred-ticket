@@ -48,7 +48,7 @@ contract Organizations {
     }
 
     function isMember(address _addr) constant returns (bool) {
-        bytes32 organizationKey = adminOrganizationKeys[_addr];
+        bytes32 organizationKey = memberOrganizationKeys[_addr];
         return organizationKey != 0 && organizations[organizationKey].members[_addr];
     }
 
